@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-$dbHost = '127.0.0.1';
+$dbHost = 'db';      
 $dbName = 'noteweb';
 $dbUser = 'root';
-$dbPass = '';
+$dbPass = 'root'; 
 
 try {
     $pdo = new PDO(
@@ -19,6 +19,7 @@ try {
 } catch (PDOException $e) {
     http_response_code(500);
     header('Content-Type: application/json; charset=utf-8');
-    echo json_encode(['success' => false, 'message' => 'Không thể kết nối cơ sở dữ liệu']);
+    echo json_encode(['success' => false, 'message' => 'Không thể kết nối cơ sở dữ liệu', 'error' => $e->getMessage()
+    ]);
     exit;
 }
