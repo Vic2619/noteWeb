@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-$dbHost = 'db';      
-$dbName = 'noteweb';
+$dbHost = 'mysql.railway.internal';      
+$dbName = 'railway';
 $dbUser = 'root';
-$dbPass = 'root'; 
+$dbPass = 'OCJRnzgyKuzuNmRsXmsvRmKiSQzjhvBj'; 
 
 try {
     $pdo = new PDO(
