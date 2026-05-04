@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-$dbHost = 'dpg-d7sdusjrjlhs73ap05j0-a';
-$dbPort = '5432';    
-$dbName = 'noteweb_db_g7ze';
-$dbUser = 'noteweb_db_g7ze_user';
-$dbPass = '45HcDc9x5VRreCazl1H4RHmhmeC399Lr'; 
+$dbHost = getenv('DB_HOST') ?: 'dpg-d7sdusjrjlhs73ap05j0-a';
+$dbPort = getenv('DB_PORT') ?: '5432';    
+$dbName = getenv('DB_NAME') ?: 'noteweb_db_g7ze';
+$dbUser = getenv('DB_USER') ?: 'noteweb_db_g7ze_user';
+$dbPass = getenv('DB_PASS') ?: '45HcDc9x5VRreCazl1H4RHmhmeC399Lr';
 
 try {
     $pdo = new PDO(
