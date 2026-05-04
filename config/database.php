@@ -1,14 +1,15 @@
 <?php
 declare(strict_types=1);
 
-$dbHost = 'mysql.railway.internal';      
+$dbHost = 'trolley.proxy.rlwy.net';
+$dbPort = '13444';    
 $dbName = 'railway';
 $dbUser = 'root';
 $dbPass = 'OCJRnzgyKuzuNmRsXmsvRmKiSQzjhvBj'; 
 
 try {
     $pdo = new PDO(
-        "mysql:host={$dbHost};dbname={$dbName};charset=utf8mb4",
+        "mysql:host={$dbHost};port={$dbPort};dbname={$dbName};charset=utf8mb4",
         $dbUser,
         $dbPass,
         [
