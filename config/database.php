@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-$dbHost = 'trolley.proxy.rlwy.net';
-$dbPort = '13444';    
-$dbName = 'railway';
-$dbUser = 'root';
-$dbPass = 'OCJRnzgyKuzuNmRsXmsvRmKiSQzjhvBj'; 
+$dbHost = 'dpg-d7sdusjrjlhs73ap05j0-a.singapore-postgres.render.com';
+$dbPort = '5432';    
+$dbName = 'noteweb_db_g7ze';
+$dbUser = 'noteweb_db_g7ze_user';
+$dbPass = '45HcDc9x5VRreCazl1H4RHmhmeC399Lr'; 
 
 try {
     $pdo = new PDO(
-        "mysql:host={$dbHost};port={$dbPort};dbname={$dbName};charset=utf8mb4",
+        "pgsql:host={$dbHost};port={$dbPort};dbname={$dbName};charset=utf8mb4",
         $dbUser,
         $dbPass,
         [
