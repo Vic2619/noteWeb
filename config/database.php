@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-$dbHost = 'dpg-d7sdusjrjlhs73ap05j0-a.singapore-postgres.render.com';
+$dbHost = 'dpg-d7sdusjrjlhs73ap05j0-a';
 $dbPort = '5432';    
 $dbName = 'noteweb_db_g7ze';
 $dbUser = 'noteweb_db_g7ze_user';
